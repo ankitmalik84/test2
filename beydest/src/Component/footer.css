@@ -1,0 +1,174 @@
+/* Ensure you include Font Awesome in your project for the social media icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* footer.css */
+
+.footer {
+  background: transparent; 
+  color: #4cb7d4;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  
+
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #58b554;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #4cb7d4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #58b554;
+}
+
+.footer-column p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #fff;
+  background-color: #4cb7d4;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #4cb7d4;
+  background-color: #58b554;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background: transparent;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #58b554;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #feb47b;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-column h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-column ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .footer-column p {
+    margin: 8px 0;
+  }
+
+  .social-icon {
+    font-size: 1rem;
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px; /* Adjust this value to position it at the top of the form */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+}

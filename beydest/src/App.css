@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  
+  
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: linear-gradient(to bottom, #e0f7ff, #e0ffe0); /* Very light sky blue to light green gradient */
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
